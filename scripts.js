@@ -13,11 +13,18 @@ window.addEventListener("load", function(){
     let content = document.getElementById("content-paragraph");
     let contentImage = document.getElementById("content-image");
     let contentHeading = document.getElementsByTagName("h2")[0];
+
+    content.innerHTML = text1999;
+    contentHeading.innerHTML = heading1999;
+    contentImage.src = "./engagement.jpg";
+    earlyButton.style.fontWeight = "bold";
+
     earlyButton.addEventListener("click", function(){
         earlyButton.style.fontWeight = "bold";
         middleButton.style.fontWeight = "normal";
         recentButton.style.fontWeight = "normal";
         content.innerHTML = text1999;
+        contentImage.src = "./engagement.jpg";
         contentHeading.innerHTML = heading1999;
         
     });
@@ -26,6 +33,7 @@ window.addEventListener("load", function(){
         middleButton.style.fontWeight = "bold";
         recentButton.style.fontWeight = "normal";
         content.innerHTML = text2001;
+        contentImage.src = "./home_improvement.jpg";
         contentHeading.innerHTML = heading2001;
     });
     recentButton.addEventListener("click", function(){
@@ -33,6 +41,7 @@ window.addEventListener("load", function(){
         middleButton.style.fontWeight = "normal";
         recentButton.style.fontWeight = "bold";
         content.innerHTML = text2003;
+        contentImage.src = "./sleep.jpg";
         contentHeading.innerHTML = heading2003;
     });
 });
