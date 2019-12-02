@@ -200,14 +200,6 @@ window.addEventListener("load", function(){
 
     //set initial content
     setNav(liveButtons);
-    contentParagraph.innerHTML = (`
-        <p id="quote">
-            <span id="quote-text"></span><br>
-            <span style="float:right;" id="quote-author"></span>
-        </p>
-    `); 
-    contentImage.src = "./quote_image.png";
-    contentImage.style = "height:64px; margin-top:20px"
     setQuote(quoteArray);
 
     //addtnl event handling
